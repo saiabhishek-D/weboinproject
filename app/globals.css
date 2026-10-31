@@ -1,18 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&family=Space+Mono:wght@400;700&display=swap');
 @import "tailwindcss";
 
-@theme inline {
+@theme {
   --color-background: #F7F7F5;
   --color-foreground: #141414;
   --color-accent: #3B5BDB;
   --color-accent-dark: #0D1A5C;
   --color-muted: #8C8C8C;
   --color-border: #E0E0E0;
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-syne);
+  --font-sans: 'Inter', var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: 'Syne', var(--font-syne), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+}
+
+:root {
+  --font-syne: 'Syne', sans-serif;
+  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+/* Explicit typography utilities */
+.font-heading {
+  font-family: var(--font-syne), 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-sans, body {
+  font-family: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono-tag {
+  font-family: 'Space Mono', ui-monospace, monospace;
+}
+
+/* Custom selection */
+::selection {
+  background-color: #3B5BDB;
+  color: #FFFFFF;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: #F7F7F5;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30,8 +59,34 @@ html {
   }
 }
 
+/* Aesthetic Studio Background with Atmosphere & Architectural Dot Matrix */
 body {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  background-color: #F7F7F5;
+  color: #141414;
+  font-family: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: 
+    radial-gradient(circle at 90% 10%, rgba(59, 91, 219, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 10% 45%, rgba(13, 26, 92, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(59, 91, 219, 0.06) 0%, transparent 50%),
+    radial-gradient(circle, rgba(20, 20, 20, 0.08) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+  background-attachment: fixed;
+}
+
+/* Analog Film Grain / Paper Texture Overlay */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Subtle border utility */
+.border-border {
+  border-color: #E0E0E0;
 }

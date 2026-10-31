@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <radialGradient id="vesper-glow" cx="40%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#182352"/>
+      <stop offset="60%" stop-color="#0E122B"/>
+      <stop offset="100%" stop-color="#060814"/>
+    </radialGradient>
+    <filter id="billboard-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  {/* Background */}
+  <rect width="1200" height="750" fill="url(#vesper-glow)"/>
+
+  {/* Ambient Lighting Accents */}
+  <circle cx="200" cy="180" r="160" fill="#3B5BDB" opacity="0.12"/>
+  <circle cx="950" cy="400" r="220" fill="#748FFC" opacity="0.08"/>
+
+  {/* Digital Billboard / Key Visual Campaign (Left) */}
+  <g transform="translate(100, 100)" filter="url(#billboard-shadow)">
+    <rect width="580" height="420" rx="16" fill="#141414" stroke="#2A2F45" stroke-width="1.5"/>
+    {/* Inner Screen */}
+    <rect x="16" y="16" width="548" height="388" rx="8" fill="#0D1A5C"/>
+
+    {/* Billboard Abstract Graphics */}
+    <circle cx="380" cy="210" r="140" fill="#3B5BDB" opacity="0.4"/>
+    <circle cx="260" cy="160" r="90" fill="#748FFC" opacity="0.25"/>
+
+    {/* Typography */}
+    <text x="50" y="80" font-family="system-ui" font-weight="600" font-size="11" fill="#748FFC" letter-spacing="3">GLOBAL LAUNCH CAMPAIGN &bull; AUTUMN 2026</text>
+    <text x="50" y="150" font-family="'Syne', sans-serif" font-weight="800" font-size="52" fill="#FFFFFF" letter-spacing="-1">VESPER.</text>
+    <text x="50" y="200" font-family="'Syne', sans-serif" font-weight="800" font-size="28" fill="#F7F7F5">SOUND REDEFINED.</text>
+    <text x="50" y="240" font-family="system-ui" font-weight="400" font-size="13" fill="#D0D7DE">Spatial acoustic headphones crafted from recycled titanium.</text>
+
+    <rect x="50" y="280" width="140" height="42" rx="21" fill="#FFFFFF"/>
+    <text x="120" y="306" text-anchor="middle" font-family="'Syne', sans-serif" font-weight="800" font-size="12" fill="#0D1A5C">DISCOVER NOW &rarr;</text>
+  </g>
+
+  {/* Social / Mobile Campaign Mockup (Right) */}
+  <g transform="translate(740, 140)" filter="url(#billboard-shadow)">
+    <rect width="360" height="460" rx="20" fill="#141414" stroke="#2A2F45" stroke-width="1.5"/>
+    <rect x="20" y="20" width="320" height="240" rx="12" fill="#0D1A5C"/>
+    <circle cx="180" cy="140" r="60" fill="#3B5BDB" opacity="0.5"/>
+    <text x="180" y="146" text-anchor="middle" font-family="'Syne', sans-serif" font-weight="800" font-size="22" fill="#FFFFFF">VESPER</text>
+
+    {/* Social Copy */}
+    <g transform="translate(24, 280)">
+      <circle cx="16" cy="16" r="16" fill="#3B5BDB"/>
+      <text x="16" y="21" text-anchor="middle" font-family="system-ui" font-weight="700" font-size="11" fill="#FFF">V</text>
+      <text x="44" y="14" font-family="system-ui" font-weight="600" font-size="12" fill="#FFF">vesper.audio</text>
+      <text x="44" y="28" font-family="system-ui" font-weight="400" font-size="10" fill="#8C8C8C">Sponsored &bull; 2.4M Views</text>
+
+      <text x="0" y="65" font-family="system-ui" font-weight="400" font-size="12" fill="#D0D7DE">
+        Pure analog warmth. Zero latency. Pre-orders now live in 24 cities worldwide.
+      </text>
+
+      <rect x="0" y="95" width="312" height="38" rx="8" fill="#3B5BDB"/>
+      <text x="156" y="119" text-anchor="middle" font-family="'Syne', sans-serif" font-weight="700" font-size="11" fill="#FFF">PRE-ORDER VESPER ONE &rarr;</text>
+    </g>
+  </g>
+
+  {/* Footnote */}
+  <text x="100" y="660" font-family="system-ui" font-weight="600" font-size="12" fill="#8C8C8C" letter-spacing="2">360&deg; BRAND STRATEGY &bull; DIGITAL MARKETING &bull; OUT-OF-HOME</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <radialGradient id="nore-bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1E2337"/>
+      <stop offset="100%" stop-color="#0E101A"/>
+    </radialGradient>
+    <filter id="laptop-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  {/* Background */}
+  <rect width="1200" height="750" fill="url(#nore-bg)"/>
+
+  {/* MacBook Presentation */}
+  <g transform="translate(150, 70)" filter="url(#laptop-shadow)">
+    {/* Screen Lid */}
+    <rect width="900" height="560" rx="20" fill="#1A1C23" stroke="#373B4D" stroke-width="1.5"/>
+    {/* Inner Bezel */}
+    <rect x="24" y="24" width="852" height="512" rx="6" fill="#0C0D12"/>
+
+    {/* Camera notch */}
+    <circle cx="450" cy="14" r="3.5" fill="#2E3344"/>
+
+    {/* Web Browser Content: Nore Studio */}
+    <g transform="translate(24, 24)">
+      {/* Browser Bar */}
+      <rect width="852" height="38" fill="#14161F"/>
+      <circle cx="24" cy="19" r="5" fill="#FF5F56"/>
+      <circle cx="40" cy="19" r="5" fill="#FFBD2E"/>
+      <circle cx="56" cy="19" r="5" fill="#27C93F"/>
+
+      {/* URL Pill */}
+      <rect x="250" y="8" width="352" height="22" rx="11" fill="#0C0D12"/>
+      <text x="426" y="23" text-anchor="middle" font-family="system-ui" font-size="10" fill="#8C8C8C">https://nore.studio &bull; Creative Architecture</text>
+
+      {/* Site Header */}
+      <g transform="translate(40, 60)">
+        <text x="0" y="22" font-family="'Syne', sans-serif" font-weight="800" font-size="18" fill="#FFFFFF">NORE STUDIO</text>
+        <text x="500" y="20" font-family="system-ui" font-size="11" fill="#8C8C8C">PROJECTS</text>
+        <text x="580" y="20" font-family="system-ui" font-size="11" fill="#8C8C8C">ABOUT</text>
+        <text x="650" y="20" font-family="system-ui" font-size="11" fill="#8C8C8C">JOURNAL</text>
+        <rect x="710" y="6" width="62" height="22" rx="11" fill="#3B5BDB"/>
+        <text x="741" y="20" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#FFF">CONTACT</text>
+
+        {/* Site Hero Content */}
+        <text x="0" y="110" font-family="'Syne', sans-serif" font-weight="800" font-size="44" fill="#FFFFFF" letter-spacing="-1">SPACES BUILT</text>
+        <text x="0" y="160" font-family="'Syne', sans-serif" font-weight="800" font-size="44" fill="#748FFC" letter-spacing="-1">FOR SILENCE.</text>
+        <text x="0" y="195" font-family="system-ui" font-weight="400" font-size="12" fill="#8C8C8C" letter-spacing="0.5">Minimalist architectural monographs and physical spaces in Kyoto and Oslo.</text>
+
+        {/* Dual Images on Website */}
+        <g transform="translate(0, 220)">
+          {/* Work Preview 1 */}
+          <rect width="360" height="180" rx="8" fill="#242838"/>
+          <line x1="20" y1="140" x2="160" y2="140" stroke="#FFF" stroke-width="2"/>
+          <text x="20" y="160" font-family="'Syne', sans-serif" font-weight="700" font-size="12" fill="#FFF">Villa Solstice &bull; 2025</text>
+
+          {/* Work Preview 2 */}
+          <rect x="380" width="390" height="180" rx="8" fill="#1E2333"/>
+          <circle cx="575" cy="90" r="50" fill="#3B5BDB" opacity="0.3"/>
+          <text x="400" y="160" font-family="'Syne', sans-serif" font-weight="700" font-size="12" fill="#FFF">Kyoto Pavilion &bull; 2026</text>
+        </g>
+      </g>
+    </g>
+
+    {/* Laptop Base */}
+    <path d="M0 560 L900 560 L930 580 L-30 580 Z" fill="#252834"/>
+    <rect x="375" y="560" width="150" height="8" rx="4" fill="#14161F"/>
+  </g>
+</svg>

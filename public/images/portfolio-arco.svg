@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <radialGradient id="arco-glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1E328A" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#0D1A5C" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#080E2B" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="arco-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#242738"/>
+    </linearGradient>
+    <linearGradient id="arco-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#748FFC"/>
+      <stop offset="100%" stop-color="#3B5BDB"/>
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  {/* Background */}
+  <rect width="1200" height="750" fill="url(#arco-glow)"/>
+
+  {/* Background Architectural Grid Lines */}
+  <line x1="100" y1="0" x2="100" y2="750" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="750" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="750" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="900" y1="0" x2="900" y2="750" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="1100" y1="0" x2="1100" y2="750" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="180" x2="1200" y2="180" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="520" x2="1200" y2="520" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+
+  {/* Letterhead Mockup (Center Left) */}
+  <g transform="translate(180, 100) rotate(-4)" filter="url(#shadow1)">
+    <rect width="360" height="480" rx="8" fill="#F7F7F5"/>
+    {/* Letterhead Header */}
+    <rect x="40" y="44" width="48" height="48" rx="8" fill="#0D1A5C"/>
+    <text x="64" y="74" text-anchor="middle" font-family="'Syne', system-ui, sans-serif" font-weight="800" font-size="20" fill="#748FFC">A</text>
+    <text x="104" y="66" font-family="'Syne', system-ui, sans-serif" font-weight="800" font-size="16" fill="#141414" letter-spacing="1">ARCO</text>
+    <text x="104" y="82" font-family="system-ui, sans-serif" font-weight="500" font-size="9" fill="#8C8C8C" letter-spacing="2">FINANCIAL TECHNOLOGIES</text>
+    <line x1="40" y1="110" x2="320" y2="110" stroke="#E0E0E0" stroke-width="1"/>
+
+    {/* Letterhead Body Lines */}
+    <rect x="40" y="140" width="180" height="10" rx="4" fill="#141414" opacity="0.8"/>
+    <rect x="40" y="170" width="280" height="6" rx="3" fill="#8C8C8C" opacity="0.3"/>
+    <rect x="40" y="186" width="270" height="6" rx="3" fill="#8C8C8C" opacity="0.3"/>
+    <rect x="40" y="202" width="260" height="6" rx="3" fill="#8C8C8C" opacity="0.3"/>
+    <rect x="40" y="218" width="200" height="6" rx="3" fill="#8C8C8C" opacity="0.3"/>
+
+    <rect x="40" y="250" width="280" height="6" rx="3" fill="#8C8C8C" opacity="0.3"/>
+    <rect x="40" y="266" width="250" height="6" rx="3" fill="#8C8C8C" opacity="0.3"/>
+    <rect x="40" y="282" width="240" height="6" rx="3" fill="#8C8C8C" opacity="0.3"/>
+
+    <rect x="40" y="380" width="100" height="2" fill="#3B5BDB"/>
+    <text x="40" y="410" font-family="system-ui, sans-serif" font-weight="600" font-size="10" fill="#141414">Arthur Vance</text>
+    <text x="40" y="424" font-family="system-ui, sans-serif" font-weight="400" font-size="9" fill="#8C8C8C">Managing Partner &bull; Zurich</text>
+  </g>
+
+  {/* Business Card 1: Slate Navy */}
+  <g transform="translate(620, 160) rotate(6)" filter="url(#shadow1)">
+    <rect width="360" height="220" rx="14" fill="url(#arco-card)" stroke="#3B5BDB" stroke-width="1" stroke-opacity="0.3"/>
+    <circle cx="60" cy="60" r="22" fill="#3B5BDB" opacity="0.2"/>
+    <text x="60" y="67" text-anchor="middle" font-family="'Syne', system-ui, sans-serif" font-weight="800" font-size="18" fill="#748FFC">A</text>
+    <text x="96" y="66" font-family="'Syne', system-ui, sans-serif" font-weight="800" font-size="18" fill="#FFFFFF" letter-spacing="1">ARCO</text>
+    <text x="60" y="145" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#FFFFFF">Institutional Wealth Platform</text>
+    <text x="60" y="166" font-family="system-ui, sans-serif" font-weight="400" font-size="10" fill="#748FFC">arco-finance.com &bull; Tier 1 Capital</text>
+    {/* Micro chip */}
+    <rect x="270" y="44" width="42" height="32" rx="6" fill="#748FFC" opacity="0.3" stroke="#748FFC" stroke-width="1"/>
+  </g>
+
+  {/* Business Card 2: Off-white Front */}
+  <g transform="translate(560, 360) rotate(-3)" filter="url(#shadow1)">
+    <rect width="360" height="220" rx="14" fill="#F7F7F5" stroke="#E0E0E0" stroke-width="1"/>
+    <rect x="40" y="40" width="36" height="36" rx="8" fill="#0D1A5C"/>
+    <text x="58" y="64" text-anchor="middle" font-family="'Syne', system-ui, sans-serif" font-weight="800" font-size="16" fill="#748FFC">A</text>
+    <text x="40" y="130" font-family="'Syne', system-ui, sans-serif" font-weight="700" font-size="15" fill="#141414">Helena Ross</text>
+    <text x="40" y="148" font-family="system-ui, sans-serif" font-weight="500" font-size="10" fill="#3B5BDB">Head of Quantitative Strategy</text>
+    <text x="40" y="174" font-family="system-ui, sans-serif" font-weight="400" font-size="10" fill="#8C8C8C">+41 44 214 8800 &bull; h.ross@arco.ch</text>
+    <text x="310" y="180" text-anchor="end" font-family="'Syne', system-ui, sans-serif" font-weight="800" font-size="20" fill="#0D1A5C" opacity="0.15">ARCO</text>
+  </g>
+
+  {/* Bottom Overlay Label */}
+  <rect x="40" y="680" width="380" height="36" rx="18" fill="#141414" opacity="0.7"/>
+  <text x="60" y="703" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#FFFFFF" letter-spacing="2">CASE STUDY &bull; BRAND IDENTITY &bull; 2026</text>
+</svg>
